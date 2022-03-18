@@ -1,0 +1,78 @@
+/*regra reset . o que estiver nela será aplicado a todas as tags possíveis.*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    /*altura/ocupação da pagina*/
+    height: 100%;
+}
+
+body{
+    color: rgb(255, 255, 255);/*cor da letra*/
+    background: rgb(0,255,156);
+    background: linear-gradient(177deg, rgba(0,255,156,1) 0%, rgba(2,0,36,1) 100%); /*background em degrade*/ 
+    font-family: 'Raleway', sans-serif; /*tipo de fonte*/
+    background-image: gif.mp4;
+}
+
+.avatar{ /*classe que a foto de perfil foi atrelada*/
+    width: 80px;/*tammanho da foto*/
+    border-radius: 50px;/*curvatura da borda da foto*/
+    border: 3px solid rgb(255, 255, 255);/*configurações da borda da foto*/
+    box-shadow: 0 0 20px rgb(255, 255, 255);/*adiciona sombra no elemento escolhido*/
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;/*fonte escolhida para o titulo principal do codigo*/    
+    font-weight: 100;/*"grossura da fonte*/
+    font-size: 24px;/*tamanho da fonte*/
+    margin-bottom: 2px;/*distancia do elemento de baixo*/
+}
+
+h2{
+    font-size: 16px;/*tamanho da fonte*/
+}
+
+.profile{/*classe em que o perfil como um todo foi atrelado*/
+    margin-top: 20px;/*distancia do elemento acima*/
+    text-align: center;/*posiçao do texto*/
+}
+
+.social img { /*social: classe ao qual os icones das redes sociais foram atrelados*/
+    width: 20px; /*tamanho dos icones*/
+}
+
+.social{
+    display: flex;
+    /*justify-content: center; funciona apenas com display flex*/
+    /*justify-content: space-between; funciona apenas com display flex*/
+    justify-content: space-around; /*funciona apenas com display flex*/
+    margin: 20px 0; /*deixando apenas o margin ele ira dar uma distancia automatica para R L T B*/
+    list-style: none;/*estilo de lista- nesse caso foi usado para tirar os pontos que ficam automaticos em uma lista*/
+}
+
+.links-list{
+    list-style: none;
+}
+
+.links-list li{
+    margin: 10px 20px;
+}
+
+.links-list li a {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0,255,156);
+    font-weight: bold;
+}
+
+.links-list li a span{
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-top: 10px;
+}
